@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oak Mg BV</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-700">
+    <div class="container mx-auto px-4 py-8 text-center"> <!-- Added text-center class -->
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold mb-2">Oak Mgt BV</h1>
+        </header>
+
+        <main>
+            <section class="mb-8">
+                <p class="mb-2">Weertersteenweg (Oph.) 5A, 3640 Kinrooi, Belgium</p>
+                <p class="mb-2"><a href="https://oakmgt.be" class="text-blue-600 hover:underline">oakmgt.be</a>
+                </p>
+                <p class="mb-2"><a href="mailto:administration@oakmgt.be" class=" text-blue-600
+                        hover:underline">administration@oakmgt.be</a>
+            </section>
+        </main>
+
+        <footer class=" text-center text-gray-500 text-sm">
+            &copy; <span id="currentYear"></span> Oak Mgt. All rights reserved.
+        </footer>
+        <script>
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        </script>
+    </div>
+</body>
+
+</html>
