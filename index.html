@@ -64,16 +64,19 @@
             z-index: 2;
         }
         .hero h1 {
-            font-size: 4rem;
+            font-size: 3.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
         .hero p {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-weight: 300;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .hero .lead {
+            font-weight: 400;
         }
         .btn-hero {
             font-size: 1.2rem;
@@ -154,6 +157,32 @@
         .social-links a:hover {
             color: #007bff;
         }
+        .hero-pfp {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+        }
+        .hero-pfp:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 991.98px) {
+            .hero {
+                height: auto;
+                padding: 6rem 0 4rem 0;
+            }
+            .hero-pfp {
+                width: 200px;
+                height: 200px;
+                margin-bottom: 2rem;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
         .partner-logo-container {
             background-color: white;
             padding: 1.5rem;
@@ -209,10 +238,22 @@
     </nav>
 
     <header class="hero">
-        <div class="container text-center hero-content">
-            <h1 class="mb-4">Your Vision, Our Code</h1>
-            <p class="lead mb-5">From web apps to AI solutions, we turn your ideas into powerful software realities</p>
-            <a href="#contact-profile" class="btn btn-outline-light btn-lg btn-hero">Let's Build Something Amazing</a>
+        <div class="container hero-content">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7 text-lg-start text-center">
+                    <h1 class="mb-3">Your Vision, Built by an Experienced CTO</h1>
+                    <p class="lead mb-3">
+                        Hi, I'm Koen van Eijk. As the former CTO of Automagica (acquired by Netcall in 2020), I turn ambitious ideas into powerful, market-ready software.
+                    </p>
+                    <p class="mb-4">
+                        Whether you need a new application from scratch, the right technology for your project, or expert support on your AI initiatives, I'm here to build your vision.
+                    </p>
+                    <a href="#contact-profile" class="btn btn-outline-light btn-lg btn-hero">Let's Build Together</a>
+                </div>
+                <div class="col-lg-5 text-center order-first order-lg-last">
+                    <img src="pfp.jpeg" alt="Koen van Eijk" class="hero-pfp">
+                </div>
+            </div>
         </div>
     </header>
 
