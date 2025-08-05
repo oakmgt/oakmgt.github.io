@@ -77,6 +77,7 @@
         }
         .hero .lead {
             font-weight: 400;
+            font-size: 1.15rem;
         }
         .btn-hero {
             font-size: 1.2rem;
@@ -107,6 +108,14 @@
         .btn-hero:hover {
             transform: translateY(-3px);
             box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+        }
+        .btn-info {
+            --bs-btn-color: #000;
+            --bs-btn-bg: #0dcaf0;
+            --bs-btn-border-color: #0dcaf0;
+            --bs-btn-hover-color: #000;
+            --bs-btn-hover-bg: #35d6f5;
+            --bs-btn-hover-border-color: #35d6f5;
         }
         .card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -241,14 +250,31 @@
         <div class="container hero-content">
             <div class="row align-items-center g-5">
                 <div class="col-lg-7 text-lg-start text-center">
-                    <h1 class="mb-3">Your Vision, Built by an Experienced CTO</h1>
-                    <p class="lead mb-3">
-                        Hi, I'm Koen van Eijk. As the former CTO of Automagica (acquired by Netcall in 2020), I turn ambitious ideas into powerful, market-ready software.
+                    <h1 class="mb-3">From Idea to Acquisition-Ready Startup</h1>
+                    <p class="lead mb-4">
+                        Hi, I'm Koen van Eijk. I co-founded and led the technology for Automagica, a successful RPA startup, from inception to its acquisition by Netcall (LSE: NET) in 2020. Now, I help founders and businesses turn ambitious ideas into powerful, market-ready software.
                     </p>
-                    <p class="mb-4">
-                        Whether you need a new application from scratch, the right technology for your project, or expert support on your AI initiatives, I'm here to build your vision.
-                    </p>
-                    <a href="#contact-profile" class="btn btn-outline-light btn-lg btn-hero">Let's Build Together</a>
+                    
+                    <div class="mb-4">
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-rocket-takeoff fs-4 me-3 text-info"></i>
+                                <span>Build your vision from scratch or scale your existing MVP.</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-compass fs-4 me-3 text-info"></i>
+                                <span>Navigate complex technology choices to avoid costly mistakes.</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="bi bi-robot fs-4 me-3 text-info"></i>
+                                <span>Leverage cutting-edge AI to build a competitive advantage.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#contact-profile" class="btn btn-outline-light btn-lg btn-hero me-2">Let's Build Together</a>
+                    <a href="#case-studies" class="btn btn-info btn-lg">See My Work</a>
+
                 </div>
                 <div class="col-lg-5 text-center order-first order-lg-last">
                     <img src="pfp.jpeg" alt="Koen van Eijk" class="hero-pfp">
